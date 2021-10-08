@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <script type="text/javascript" src="assets/js/hompage.js"></script>
     <title>Document</title>
 </head>
@@ -13,23 +14,44 @@
 <body>
     <div class="flex-container">
         <div class="flex-item-left">
-            <div class="container-product">
-                <div>
-                    <form class="search" action="">
-                        <input type="text" placeholder="Search products...." name="search">
-                    </form>
-                </div>
-                <div id="container-flex">
-
-                </div>
+            <div>
+                <form class="search" action="">
+                    <input type="text" placeholder="Search products...." name="search">
+                </form>
             </div>
-            <div class="tag-bottom">
-                <strong> Dhanmondi | Register 1 | New Sale </strong>
+            <div class="left-block">
+                <div id="container-flex">
+                </div>
+                <div class="tag-bottom">
+                    <strong> Dhanmondi | Register 1 | New Sale </strong>
+                    <button class="btn">New Sale</button>
+                    <button class="btn">Options</button>
+                </div>
             </div>
         </div>
         <div class="flex-item-right">
-            <div>
-                abir
+            <div class="header-color">
+                <h4 class="right-header"><i class="fas fa-user icon"></i>Add Customer</h4>
+            </div>
+
+            <div class="right-block">
+                <div id="item-show">
+                </div>
+                <div>
+                    <div class="amount-show ">Discount
+                        <p class="discount-amount">BDT <span id="discount">0.00</span></p>
+                    </div>
+                    <div class="amount-show ">Subtotal
+                        <p class="subtotal-amount">BDT <span id="subtotal">0.00</span></p>
+                    </div>
+                    <div class="amount-show ">Tax(0%)
+                        <p class="tax-amount">BDT <span id="tax">0.00</span></p>
+                    </div>
+                    <div class="amount-show ">Total
+                        <p class="total-amount">BDT <span id="total">0.00</span></p>
+                    </div>
+                    <button class="pay-btn">Pay <p class="pay-btn-amount">BDT <span id="pay-total">0.00</span></p></button>
+                </div>
             </div>
         </div>
     </div>
